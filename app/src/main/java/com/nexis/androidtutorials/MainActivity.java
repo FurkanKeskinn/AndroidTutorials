@@ -14,11 +14,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button buttonCalculate = (Button)findViewById(R.id.button_calculate);
+        Button estimatingNumbers = (Button)findViewById(R.id.estimating_numbers);
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent( MainActivity.this, CalculateActivity.class));
             }
+
         });
+        estimatingNumbers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View z) {
+                startActivity(new Intent(MainActivity.this, EstimatingNumbers.class));
+            }
+        });
+
     }
 }

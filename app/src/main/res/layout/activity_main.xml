@@ -7,10 +7,15 @@
     tools:context=".MainActivity">
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/button_calculate"
-        android:text="Hesap Makinesi"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesap Makinesi" />
 
+    <Button
+        android:id="@+id/estimating_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sayı Tahmin Etme"/>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
