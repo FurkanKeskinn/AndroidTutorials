@@ -37,7 +37,6 @@ public class EstimatingNumbers extends AppCompatActivity {
         randomsayi = rndNumber.nextInt(5);
         System.out.println("Random Sayı = " + randomsayi);
 
-        res = findViewById(R.id.textRestart);
         res.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
