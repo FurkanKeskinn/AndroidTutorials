@@ -45,7 +45,7 @@ public class CalculateActivity extends AppCompatActivity {
         });
 
     }
-    public  void equals(View v){
+    public  void equals1(View v){
         sayi1 = editText1.getText().toString();
         sayi2 = editText2.getText().toString();
 
