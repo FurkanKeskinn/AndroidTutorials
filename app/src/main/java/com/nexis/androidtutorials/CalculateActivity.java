@@ -18,15 +18,16 @@ public class CalculateActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_calculate);
 
         editText1 = (EditText)findViewById(R.id.editTextId1);
         editText2 = (EditText)findViewById(R.id.editTextId2);
         editSonuc = (TextView)findViewById(R.id.editTextIdSonuc);
 
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_calculate);
+
     }
-    public  void equals(View h){
+    public  void equals(View v){
         sayi1 = editText1.getText().toString();
         sayi2 = editText2.getText().toString();
 
@@ -36,7 +37,7 @@ public class CalculateActivity extends AppCompatActivity {
             s2 = Integer.valueOf(sayi2);
             hesap = new Operation(s1,s2);
 
-            switch (h.getId()){
+            switch (v.getId()){
                 case R.id.plus:
                     sonuc = hesap.topla();
                     break;
@@ -55,7 +56,7 @@ public class CalculateActivity extends AppCompatActivity {
             }
             editSonuc.setText("Sonuç =" + sonuc);
         }
-        else editSonuc.setText("Sayı Girmediniz Lütfen Sayı giriniz");
+        else editSonuc.setText("Lütfen İki Sayı giriniz");
 
     }
 }

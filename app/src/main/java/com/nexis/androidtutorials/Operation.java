@@ -11,12 +11,12 @@ public class Operation {
         return number1 + number2;
     }
     public int fark(){
-        return number1 + number2;
+        return number1 - number2;
     }
     public int carp(){
-        return number1 + number2;
+        return number1 * number2;
     }
     public int bol(){
-        return number1 + number2;
+        return number1 / number2;
     }
 }
