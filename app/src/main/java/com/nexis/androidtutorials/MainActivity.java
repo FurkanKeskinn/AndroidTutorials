@@ -6,15 +6,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Button buttonCalculate = (Button)findViewById(R.id.button_calculate);
         Button estimatingNumbers = (Button)findViewById(R.id.estimating_numbers);
+
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -22,7 +25,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-        estimatingNumbers.setOnClickListener(new View.OnClickListener() {
+
+        estimatingNumbers.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View z) {
                 startActivity(new Intent(MainActivity.this, EstimatingNumbers.class));

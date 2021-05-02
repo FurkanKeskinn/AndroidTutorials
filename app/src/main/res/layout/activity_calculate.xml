@@ -6,13 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".CalculateActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/editTextId1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Calculate Activity"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:hint="İkinci Sayıyı Giriniz"
+        android:inputType="numberSigned|textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBirinciSayi" />
+
+
+    <EditText
+        android:id="@+id/editTextId2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:ems="10"
+        android:hint="Birinci Sayıyı Giriniz"
+        android:inputType="numberSigned|textPersonName"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/minus"
+        android:layout_marginTop="81dp"
+        android:onClick="equals"
+        android:text="-"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/multiply"
+        app:layout_constraintStart_toEndOf="@+id/plus"
+        app:layout_constraintTop_toTopOf="@+id/multiply"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/multiply"
+        android:layout_marginEnd="5dp"
+        android:onClick="equals"
+        android:text="*"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/divided"
+        app:layout_constraintStart_toEndOf="@+id/minus"
+        app:layout_constraintBaseline_toBaselineOf="@+id/divided"
+
+    <Button
+        android:id="@+id/divided"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:onClick="equals"
+        android:text="/"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/multiply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/multiply" />
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="equals"
+        android:text="+"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="269dp" />
+
+    <TextView
+        android:id="@+id/editTextIdSonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="68dp"
+        android:text="Sonuç ="
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/divided"
+        app:layout_constraintTop_toBottomOf="@+id/divided" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
