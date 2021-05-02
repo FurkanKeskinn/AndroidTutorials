@@ -34,7 +34,8 @@ public class CalculateActivity extends AppCompatActivity {
         editSonuc = (TextView)findViewById(R.id.editTextIdSonuc);
 
 
-        Button clear =(Button)findViewById(R.id.delete);
+
+        Button clear = (Button)findViewById(R.id.delete);
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
