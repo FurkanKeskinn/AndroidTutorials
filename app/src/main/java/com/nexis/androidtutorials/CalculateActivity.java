@@ -40,7 +40,7 @@ public class CalculateActivity extends AppCompatActivity {
             public void onClick(View v) {
                 editText1.setText("");
                 editText2.setText("");
-                editSonuc.setText("");
+                editSonuc.setText("Sonuç =");
             }
         });
 
