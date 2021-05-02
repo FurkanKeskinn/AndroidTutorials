@@ -31,40 +31,53 @@ public class EstimatingNumbers extends AppCompatActivity {
         remain = (TextView) findViewById(R.id.textResidual);
         info = (TextView) findViewById(R.id.textScreen);
         enteredNumber = (EditText) findViewById(R.id.textNumber);
+        Button res = (Button)findViewById(R.id.textRestart);
 
         rndNumber = new Random();
         randomsayi = rndNumber.nextInt(5);
         System.out.println("Random Sayı = " + randomsayi);
 
+        res = findViewById(R.id.textRestart);
+        res.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+                startActivity(getIntent());
+            }
+
+        });
     }
 
     public void tahmin(View v) {
 
         gelenDeger = enteredNumber.getText().toString();
 
-        if (!TextUtils.isEmpty(gelenDeger)) {
+        if (!TextUtils.isEmpty(gelenDeger)){
 
             if (kalanHak > 0) {
+                enteredNumber.setText("");
 
                 if (gelenDeger.equals(String.valueOf(randomsayi))) {
 
                     sonucGoster("Tebrikle Doğru Tahminde Bulundunuz.");
                     tahminDogrumu = true;
+
                 } else {
                     info.setText("Yanlış Tahminde Bulundunuz.");
-                    enteredNumber.setText(" ");
                 }
                 kalanHak--;
                 remain.setText("Kalan Hak = " + kalanHak);
 
                 if (kalanHak == 0 && tahminDogrumu == false)
                     sonucGoster("Tahmin Hakkınız Bitti.");
+
             } else
                 info.setText("Oyun Bitti.");
 
         } else
             info.setText("Lütfen Sayı Giriniz.");
     }
+
 
     private void sonucGoster(String mesaj) {
         enteredNumber.setEnabled(false);
