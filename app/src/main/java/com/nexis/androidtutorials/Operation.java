@@ -19,4 +19,5 @@ public class Operation {
     public int bol(){
         return number1 / number2;
     }
-}
+    }
+

@@ -1,10 +1,15 @@
 package com.nexis.androidtutorials;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NavUtils;
 
+import android.content.Intent;
+import android.graphics.Path;
 import android.os.Bundle;
+import android.text.Editable;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -16,6 +21,9 @@ public class CalculateActivity extends AppCompatActivity {
     private int s1, s2, sonuc;
     private Operation hesap;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +33,16 @@ public class CalculateActivity extends AppCompatActivity {
         editText2 = (EditText)findViewById(R.id.editTextId2);
         editSonuc = (TextView)findViewById(R.id.editTextIdSonuc);
 
+
+        Button clear =(Button)findViewById(R.id.delete);
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                editText1.setText("");
+                editText2.setText("");
+                editSonuc.setText("");
+            }
+        });
 
     }
     public  void equals(View v){
@@ -53,10 +71,17 @@ public class CalculateActivity extends AppCompatActivity {
                 case R.id.divided:
                     sonuc = hesap.bol();
                     break;
+
+
+
             }
             editSonuc.setText("Sonuç =" + sonuc);
         }
         else editSonuc.setText("Lütfen İki Sayı giriniz");
 
     }
+
 }
+
+
+
