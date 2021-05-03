@@ -29,6 +29,12 @@
             android:layout_height="wrap_content"
             android:text="İmage Test" />
 
+        <Button
+            android:id="@+id/signUppage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol Sayfası" />
+
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

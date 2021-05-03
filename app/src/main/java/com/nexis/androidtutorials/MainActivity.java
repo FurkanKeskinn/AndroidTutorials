@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonCalculate = (Button)findViewById(R.id.button_calculate);
         Button estimatingNumbers = (Button)findViewById(R.id.estimating_numbers);
         Button imageActivity = (Button)findViewById(R.id.imageTest);
+        Button signUpPage = (Button)findViewById(R.id.signUppage);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ImageActivity.class));
+            }
+        });
+
+        signUpPage.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SignUpPage.class));
             }
         });
 
