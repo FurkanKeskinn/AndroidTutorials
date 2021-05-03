@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Button estimatingNumbers = (Button)findViewById(R.id.estimating_numbers);
         Button imageActivity = (Button)findViewById(R.id.imageTest);
         Button signUpPage = (Button)findViewById(R.id.signUppage);
+        Button buttonAndBar = (Button)findViewById(R.id.buttonAndBar);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +48,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SignUpPage.class));
+            }
+        });
+
+        buttonAndBar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ButtonAndBarActivity.class));
             }
         });
 
