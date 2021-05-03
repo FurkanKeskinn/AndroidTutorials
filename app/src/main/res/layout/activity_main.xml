@@ -41,6 +41,12 @@
             android:layout_height="wrap_content"
             android:text="Button And Bars" />
 
+        <Button
+            android:id="@+id/randomOperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random İşlem" />
+
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

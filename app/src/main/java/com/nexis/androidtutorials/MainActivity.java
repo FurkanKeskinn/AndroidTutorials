@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button imageActivity = (Button)findViewById(R.id.imageTest);
         Button signUpPage = (Button)findViewById(R.id.signUppage);
         Button buttonAndBar = (Button)findViewById(R.id.buttonAndBar);
+        Button randomOperation = (Button)findViewById(R.id.randomOperation);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,5 +59,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        randomOperation.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, RandomOperationActivity.class));
+            }
+        });
     }
 }
