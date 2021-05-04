@@ -47,6 +47,12 @@
             android:layout_height="wrap_content"
             android:text="Random İşlem" />
 
+        <Button
+            android:id="@+id/SwitchPagesActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sayfalar Arası Geçiş" />
+
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

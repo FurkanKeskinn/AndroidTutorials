@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         Button signUpPage = (Button)findViewById(R.id.signUppage);
         Button buttonAndBar = (Button)findViewById(R.id.buttonAndBar);
         Button randomOperation = (Button)findViewById(R.id.randomOperation);
+        Button switchPages = (Button)findViewById(R.id.SwitchPagesActivity);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RandomOperationActivity.class));
+            }
+        });
+
+        switchPages.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SwitchPages.class));
             }
         });
     }
