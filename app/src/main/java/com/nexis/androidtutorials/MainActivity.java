@@ -6,9 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -24,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Button randomOperation = (Button) findViewById(R.id.randomOperation);
         Button switchPages = (Button) findViewById(R.id.SwitchPagesActivity);
         Button countersButton = (Button) findViewById(R.id.countersButton);
+        Button nameCityGameButton = (Button) findViewById(R.id.nameCityGameButton);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,6 +77,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CountersActivity.class));
+            }
+        });
+
+        nameCityGameButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, NameCityGame.class));
             }
         });
     }

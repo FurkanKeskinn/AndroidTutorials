@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormalGameActivity">
+
+    <TextView
+        android:id="@+id/textIlBilgi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/textViewBlackColor"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textIl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/textViewBlackColor"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textIlBilgi"
+        app:layout_constraintStart_toStartOf="@+id/textIlBilgi"
+        app:layout_constraintTop_toBottomOf="@+id/textIlBilgi" />
+
+    <EditText
+        android:id="@+id/editTextTextTahminScreen"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Tahmininizi Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textIlBilgi"
+        app:layout_constraintStart_toStartOf="@+id/textIlBilgi"
+        app:layout_constraintTop_toBottomOf="@+id/textIl" />
+
+    <Button
+        android:id="@+id/buttonHarfAl"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:onClick="HarfAlOnClick"
+        android:text="Harf Al"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTahminScreen" />
+
+    <Button
+        android:id="@+id/tahminButton"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="tahminOnClick"
+        android:text="Tahminde Bulun"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTahminScreen" />
+</androidx.constraintlayout.widget.ConstraintLayout>

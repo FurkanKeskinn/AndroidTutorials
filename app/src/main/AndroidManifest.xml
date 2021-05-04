@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorials">
-        <activity android:name=".CountersActivity"></activity>
+        <activity android:name=".TimeGameActivity"></activity>
+        <activity android:name=".NormalGameActivity" />
+        <activity android:name=".NameCityGame" />
+        <activity android:name=".CountersActivity" />
         <activity android:name=".NewPagesActivity" />
         <activity android:name=".SwitchPages" />
         <activity android:name=".RandomOperationActivity" />

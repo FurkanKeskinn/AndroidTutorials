@@ -1,64 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hesap Makinesi" />
 
-        <Button
-            android:id="@+id/button_calculate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hesap Makinesi" />
+    <Button
+        android:id="@+id/estimating_numbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sayı Tahmin Etme" />
 
-        <Button
-            android:id="@+id/estimating_numbers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sayı Tahmin Etme" />
+    <Button
+        android:id="@+id/imageTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İmage Test" />
 
-        <Button
-            android:id="@+id/imageTest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="İmage Test" />
+    <Button
+        android:id="@+id/signUppage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kayıt Ol Sayfası" />
 
-        <Button
-            android:id="@+id/signUppage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Kayıt Ol Sayfası" />
+    <Button
+        android:id="@+id/buttonAndBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button And Bars" />
 
-        <Button
-            android:id="@+id/buttonAndBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button And Bars" />
+    <Button
+        android:id="@+id/randomOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Random İşlem" />
 
-        <Button
-            android:id="@+id/randomOperation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Random İşlem" />
+    <Button
+        android:id="@+id/SwitchPagesActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sayfalar Arası Geçiş" />
 
-        <Button
-            android:id="@+id/SwitchPagesActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sayfalar Arası Geçiş" />
+    <Button
+        android:id="@+id/countersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sayaçlar" />
 
-        <Button
-            android:id="@+id/countersButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sayaçlar" />
+    <Button
+        android:id="@+id/nameCityGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İsim Şehir Oyunu" />
 
-    </LinearLayout>
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</LinearLayout>
