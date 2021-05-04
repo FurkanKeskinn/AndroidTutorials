@@ -16,62 +16,71 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button buttonCalculate = (Button)findViewById(R.id.button_calculate);
-        Button estimatingNumbers = (Button)findViewById(R.id.estimating_numbers);
-        Button imageActivity = (Button)findViewById(R.id.imageTest);
-        Button signUpPage = (Button)findViewById(R.id.signUppage);
-        Button buttonAndBar = (Button)findViewById(R.id.buttonAndBar);
-        Button randomOperation = (Button)findViewById(R.id.randomOperation);
-        Button switchPages = (Button)findViewById(R.id.SwitchPagesActivity);
+        Button buttonCalculate = (Button) findViewById(R.id.button_calculate);
+        Button estimatingNumbers = (Button) findViewById(R.id.estimating_numbers);
+        Button imageActivity = (Button) findViewById(R.id.imageTest);
+        Button signUpPage = (Button) findViewById(R.id.signUppage);
+        Button buttonAndBar = (Button) findViewById(R.id.buttonAndBar);
+        Button randomOperation = (Button) findViewById(R.id.randomOperation);
+        Button switchPages = (Button) findViewById(R.id.SwitchPagesActivity);
+        Button countersButton = (Button) findViewById(R.id.countersButton);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent( MainActivity.this, CalculateActivity.class));
+                startActivity(new Intent(MainActivity.this, CalculateActivity.class));
             }
 
         });
 
-        estimatingNumbers.setOnClickListener(new View.OnClickListener(){
+        estimatingNumbers.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, EstimatingNumbers.class));
             }
         });
 
-        imageActivity.setOnClickListener(new View.OnClickListener(){
+        imageActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ImageActivity.class));
             }
         });
 
-        signUpPage.setOnClickListener(new View.OnClickListener(){
+        signUpPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SignUpPage.class));
             }
         });
 
-        buttonAndBar.setOnClickListener(new View.OnClickListener(){
+        buttonAndBar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, ButtonAndBarActivity.class));
             }
         });
 
-        randomOperation.setOnClickListener(new View.OnClickListener(){
+        randomOperation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, RandomOperationActivity.class));
             }
         });
 
-        switchPages.setOnClickListener(new View.OnClickListener(){
+        switchPages.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SwitchPages.class));
             }
         });
+
+        countersButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CountersActivity.class));
+            }
+        });
     }
+
 }

@@ -53,6 +53,12 @@
             android:layout_height="wrap_content"
             android:text="Sayfalar Arası Geçiş" />
 
+        <Button
+            android:id="@+id/countersButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sayaçlar" />
+
     </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
