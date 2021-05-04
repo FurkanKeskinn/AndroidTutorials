@@ -20,7 +20,7 @@ public class RandomOperationActivity extends AppCompatActivity {
     private TextView randomTopla, randomCıkar, randomCarp, randomBol, randomSoru;
     private ToggleButton toggleTopla, toggleCıkar, toggleCarp, toggleBol;
     private EditText editTextQuestion;
-    private Random randomIslem, randomSayi;
+    private Random  randomSayi;
     private int randomIslemNumber, randomSayiNumber;
     private String soru, textTahmin;
     private int s1, s2, sonuc;
@@ -34,7 +34,6 @@ public class RandomOperationActivity extends AppCompatActivity {
 
         islemTurleri = new ArrayList<>();
 
-        randomIslem =new Random();
         randomSayi = new Random();
 
     toggleTopla = (ToggleButton)findViewById(R.id.toggleTopla);
@@ -107,6 +106,8 @@ public class RandomOperationActivity extends AppCompatActivity {
             case R.id.buttonTahmin:
                 tahminControle();
                 break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + v.getId());
         }
     }
     private void tahminControle(){
@@ -131,9 +132,11 @@ public class RandomOperationActivity extends AppCompatActivity {
             soru += " ";
 
             soru += islemTurleri.get(randomIslemNumber);
+            soru += " ";
 
             s2 += rndmSayiGetir();
             soru += s2;
+            soru += " = ?";
             switch (islemTurleri.get(randomIslemNumber)){
                 case "+":
                     sonuc = s1 + s2;
@@ -150,11 +153,10 @@ public class RandomOperationActivity extends AppCompatActivity {
                 case "/":
                     sonuc = s1 / s2;
                     break;
-
             }
 
         }
-        return soru;
+       return soru;
     }
 
 
@@ -163,5 +165,4 @@ public class RandomOperationActivity extends AppCompatActivity {
         return randomSayiNumber;
 
     }
-
 }
