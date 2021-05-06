@@ -6,4 +6,110 @@
     android:layout_height="match_parent"
     tools:context=".TimeGameActivity">
 
+    <TextView
+        android:id="@+id/textIlBilgiT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:textColor="@color/textViewBlackColor"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewToplamPuanT"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textViewToplamPuanT"
+        app:layout_constraintTop_toBottomOf="@+id/textViewToplamPuanT" />
+
+    <TextView
+        android:id="@+id/textIlT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/textViewBlackColor"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textIlBilgiT"
+        app:layout_constraintStart_toStartOf="@+id/textIlBilgiT"
+        app:layout_constraintTop_toBottomOf="@+id/textIlBilgiT" />
+
+    <EditText
+        android:id="@+id/editTextTextTahminScreenT"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Tahmininizi Giriniz"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textIlBilgiT"
+        app:layout_constraintStart_toStartOf="@+id/textIlBilgiT"
+        app:layout_constraintTop_toBottomOf="@+id/textIlT" />
+
+    <Button
+        android:id="@+id/tahminButtonT"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="tahminOnClickT"
+        android:text="Tahminde Bulun"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTahminScreenT" />
+
+    <Button
+        android:id="@+id/buttonHarfAlT"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:onClick="HarfAlOnClickT"
+        android:text="Harf Al"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextTahminScreenT" />
+
+    <TextView
+        android:id="@+id/textViewToplamPuanT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Toplam Bölüm Puanı = 0"
+        android:textColor="@color/textViewBlackColor"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="3.00"
+        android:textColor="@color/textViewBlackColor"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewToplamPuanT" />
+
+    <Button
+        android:id="@+id/buttonRestartGameT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="RestartgameOnClick"
+        android:text="Tekrar Oyna"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tahminButtonT" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

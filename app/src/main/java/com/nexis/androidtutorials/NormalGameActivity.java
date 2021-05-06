@@ -1,4 +1,4 @@
-package com.nexis.androidtutorials;
+      package com.nexis.androidtutorials;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,13 +7,14 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class NormalGameActivity extends AppCompatActivity {
 
-    private TextView textIlBilgi, textIl;
+    private TextView textIlBilgi, textIl, textViewToplamPuan;
     private EditText editTextTextTahminScreen;
     private String[] iller = {"İstanbul", "Ankara", "İzmir", "Adana", "Adıyaman", "Afyonkarahisar",
             "Ağrı", "Aksaray", "Amasya", "Antalya", "Ardahan", "Artvin", "Aydın", "Balıkesir",
@@ -32,16 +33,17 @@ public class NormalGameActivity extends AppCompatActivity {
     private int rndmNumber, rndmNumberHarf, baslangicHarfSayisi;
     private String rndmGelenIl, ilBoyutu, editTxtGelenTahmin;
     private ArrayList<Character> ilHarfleri;
-    private float maximumPuan = 100.0f, reducePuan, toplamPuan = 0;
+    private float maximumPuan = 100.0f, reducePuan, toplamPuan = 0, bolumToplamPuan= 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_normal_game);
 
-        textIlBilgi = (TextView) findViewById(R.id.textIlBilgi);
-        textIl = (TextView) findViewById(R.id.textIl);
-        editTextTextTahminScreen = (EditText) findViewById(R.id.editTextTextTahminScreen);
+        textIlBilgi = (TextView) findViewById(R.id.textIlBilgiN);
+        textIl = (TextView) findViewById(R.id.textIlN);
+        editTextTextTahminScreen = (EditText) findViewById(R.id.editTextTextTahminScreenN);
+        textViewToplamPuan = (TextView)findViewById(R.id.textViewToplamPuanN);
 
         rndmHarf = new Random();
         randomDegerleriBelirle();
@@ -49,15 +51,20 @@ public class NormalGameActivity extends AppCompatActivity {
 
     }
 
-    public void tahminOnClick(View v) {
+    public void tahminOnClickN(View v) {
         editTxtGelenTahmin = editTextTextTahminScreen.getText().toString();
 
         if (!TextUtils.isEmpty(editTxtGelenTahmin)) {
             if (editTxtGelenTahmin.equals(rndmGelenIl)) {
+
+                bolumToplamPuan += toplamPuan;
+                Toast.makeText(getApplicationContext(), "Tebrikler Doğru Tahminde Bulundunuz.", Toast.LENGTH_SHORT).show();
+
+                textViewToplamPuan.setText("Toplam Bölüm Puanı = " + bolumToplamPuan);
+
                 editTextTextTahminScreen.setText("");
                 System.out.println("Doğru Tahminde Bulundunuz.");
                 randomDegerleriBelirle();
-
 
             } else
                 System.out.println("Yanlış Tahminde Bulundunuz.");
@@ -65,11 +72,11 @@ public class NormalGameActivity extends AppCompatActivity {
             System.out.println("Tahmin Değeri boş Olamaz.");
     }
 
-    public void HarfAlOnClick(View v) {
+    public void HarfAlOnClickN(View v) {
         if (ilHarfleri.size() > 0) {
             randomHarfAl();
             toplamPuan -= reducePuan;
-            System.out.println("Kalan Puan = " + toplamPuan);
+            Toast.makeText(getApplicationContext(), "Kalan Puan = " + toplamPuan, Toast.LENGTH_SHORT).show();
         }else
             System.out.println("Harf Kalmadı.");
     }
@@ -88,6 +95,8 @@ public class NormalGameActivity extends AppCompatActivity {
             baslangicHarfSayisi = 2;
         else if (rndmGelenIl.length() >= 10)
             baslangicHarfSayisi = 3;
+        else
+            baslangicHarfSayisi =0;
 
         for (int i = 0; i < rndmGelenIl.length(); i++) {
             if (i < rndmGelenIl.length() - 1)
