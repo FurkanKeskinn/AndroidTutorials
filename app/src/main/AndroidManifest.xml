@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorials">
-        <activity android:name=".TimeGameActivity" android:screenOrientation="portrait"q/>
-        <activity android:name=".NormalGameActivity" android:screenOrientation="portrait" />
+        <activity android:name=".UseListActivity"></activity>
+        <activity android:name=".DetailsActivity" />
+        <activity android:name=".ListViewActivity" />
+        <activity
+            android:name=".TimeGameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NormalGameActivity"
+            android:screenOrientation="portrait" />
         <activity android:name=".NameCityGame" />
         <activity android:name=".CountersActivity" />
         <activity android:name=".NewPagesActivity" />

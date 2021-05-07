@@ -61,4 +61,10 @@
         android:layout_height="wrap_content"
         android:text="İsim Şehir Oyunu" />
 
+    <Button
+        android:id="@+id/activityListUses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste Kullanımı" />
+
 </LinearLayout>

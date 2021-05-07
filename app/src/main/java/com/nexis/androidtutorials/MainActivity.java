@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         Button switchPages = (Button) findViewById(R.id.SwitchPagesActivity);
         Button countersButton = (Button) findViewById(R.id.countersButton);
         Button nameCityGameButton = (Button) findViewById(R.id.nameCityGameButton);
+        Button activityListUses = (Button) findViewById(R.id.activityListUses);
+
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,6 +86,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, NameCityGame.class));
+            }
+        });
+        activityListUses.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, UseListActivity.class));
+
             }
         });
     }
