@@ -19,6 +19,7 @@ public class UseListActivity extends AppCompatActivity {
 
         Button ListViewActivity = (Button) findViewById(R.id.ListViewActivity);
         Button buttonDetailsActivity = (Button) findViewById(R.id.buttonDetailsActivity);
+        Button coustomListViewButton = (Button) findViewById(R.id.coustomListViewButton);
 
 
         ListViewActivity.setOnClickListener(new View.OnClickListener() {
@@ -31,6 +32,13 @@ public class UseListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UseListActivity.this, DetailsActivity.class));
+
+            }
+        });
+        coustomListViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UseListActivity.this, CoustomListViewActivity.class));
 
             }
         });

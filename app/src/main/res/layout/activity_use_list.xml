@@ -11,12 +11,18 @@
         android:id="@+id/ListViewActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ListView" />
+        android:text="ListView Kullanımı" />
 
     <Button
         android:id="@+id/buttonDetailsActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Details Activity" />
+
+    <Button
+        android:id="@+id/coustomListViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coustom LİstView " />
 
 </LinearLayout>

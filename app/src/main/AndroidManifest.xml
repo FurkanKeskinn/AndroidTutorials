@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorials">
-        <activity android:name=".UseListActivity"></activity>
+        <activity android:name=".CoustomListViewActivity"></activity>
+        <activity android:name=".UseListActivity" />
         <activity android:name=".DetailsActivity" />
         <activity android:name=".ListViewActivity" />
         <activity
