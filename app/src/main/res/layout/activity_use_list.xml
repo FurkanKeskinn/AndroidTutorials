@@ -25,4 +25,16 @@
         android:layout_height="wrap_content"
         android:text="Coustom LİstView " />
 
+    <Button
+        android:id="@+id/GridViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GridView Kullanımı" />
+
+    <Button
+        android:id="@+id/buttonCoustomGridVİew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hayvan Galerisi" />
+
 </LinearLayout>

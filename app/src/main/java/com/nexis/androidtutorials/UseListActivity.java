@@ -20,7 +20,8 @@ public class UseListActivity extends AppCompatActivity {
         Button ListViewActivity = (Button) findViewById(R.id.ListViewActivity);
         Button buttonDetailsActivity = (Button) findViewById(R.id.buttonDetailsActivity);
         Button coustomListViewButton = (Button) findViewById(R.id.coustomListViewButton);
-
+        Button GridViewButton = (Button) findViewById(R.id.GridViewButton);
+        Button buttonCoustomGridVİew = (Button) findViewById(R.id.buttonCoustomGridVİew);
 
         ListViewActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +40,20 @@ public class UseListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UseListActivity.this, CoustomListViewActivity.class));
+
+            }
+        });
+        GridViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UseListActivity.this, GridViewActivity.class));
+
+            }
+        });
+        buttonCoustomGridVİew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UseListActivity.this, CoustomGridViewActivity.class));
 
             }
         });
