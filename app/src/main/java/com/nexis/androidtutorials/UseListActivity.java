@@ -24,6 +24,7 @@ public class UseListActivity extends AppCompatActivity {
         Button buttonCoustomGridVİew = (Button) findViewById(R.id.buttonCoustomGridVİew);
         Button buttonRecyclerView = (Button) findViewById(R.id.buttonRecyclerView);
         Button buttonLifeCycles = (Button) findViewById(R.id.buttonLifeCycles);
+        Button buttonProrgamMatic = (Button) findViewById(R.id.buttonProrgamMatic);
 
         ListViewActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +76,15 @@ public class UseListActivity extends AppCompatActivity {
 
             }
         });
+
+        buttonProrgamMatic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UseListActivity.this, ProgrammaticActivity.class));
+
+            }
+        });
+
     }
 
 }
