@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorials">
-        <activity android:name=".RecyclerViewActivity"></activity>
+        <activity android:name=".LifeCycles2"></activity>
+        <activity android:name=".LifeCycles" />
+        <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".CoustomGridViewActivity" />
         <activity android:name=".GridViewActivity" />
         <activity android:name=".CoustomListViewActivity" />

@@ -23,6 +23,7 @@ public class UseListActivity extends AppCompatActivity {
         Button GridViewButton = (Button) findViewById(R.id.GridViewButton);
         Button buttonCoustomGridVİew = (Button) findViewById(R.id.buttonCoustomGridVİew);
         Button buttonRecyclerView = (Button) findViewById(R.id.buttonRecyclerView);
+        Button buttonLifeCycles = (Button) findViewById(R.id.buttonLifeCycles);
 
         ListViewActivity.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +64,14 @@ public class UseListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(UseListActivity.this, RecyclerViewActivity.class));
+
+            }
+        });
+
+        buttonLifeCycles.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UseListActivity.this, LifeCycles.class));
 
             }
         });
