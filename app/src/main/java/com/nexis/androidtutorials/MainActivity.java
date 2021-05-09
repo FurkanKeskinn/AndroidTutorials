@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Button countersButton = (Button) findViewById(R.id.countersButton);
         Button nameCityGameButton = (Button) findViewById(R.id.nameCityGameButton);
         Button activityListUses = (Button) findViewById(R.id.activityListUses);
+        Button buttondialogActivity = (Button) findViewById(R.id.buttondialogActivity);
 
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
@@ -92,6 +93,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, UseListActivity.class));
+
+            }
+        });
+
+        buttondialogActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, DialogActivity.class));
 
             }
         });

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorials">
-        <activity android:name=".ProgrammaticActivity"></activity>
+        <activity android:name=".DialogActivity"></activity>
+        <activity android:name=".ProgrammaticActivity" />
         <activity android:name=".LifeCycles2" />
         <activity android:name=".LifeCycles" />
         <activity android:name=".RecyclerViewActivity" />

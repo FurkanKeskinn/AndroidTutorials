@@ -67,5 +67,11 @@
         android:layout_height="wrap_content"
         android:text="Liste Kullanımı" />
 
+    <Button
+        android:id="@+id/buttondialogActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diyaloglar" />
+
 
 </LinearLayout>
