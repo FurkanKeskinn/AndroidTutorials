@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         Button nameCityGameButton = (Button) findViewById(R.id.nameCityGameButton);
         Button activityListUses = (Button) findViewById(R.id.activityListUses);
         Button buttondialogActivity = (Button) findViewById(R.id.buttondialogActivity);
+        Button buttonMenuActivity = (Button) findViewById(R.id.buttonMenuActivity);
 
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
@@ -101,6 +102,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, DialogActivity.class));
+
+            }
+        });
+
+        buttonMenuActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MenuActivity.class));
 
             }
         });
