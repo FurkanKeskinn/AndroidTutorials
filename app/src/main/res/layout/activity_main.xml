@@ -103,6 +103,12 @@
             android:layout_height="wrap_content"
             android:text="Custom Dialog Yapımı" />
 
+        <Button
+            android:id="@+id/buttonBottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BottomNavigationView Kullanımı" />
+
     </LinearLayout>
 
 </LinearLayout>

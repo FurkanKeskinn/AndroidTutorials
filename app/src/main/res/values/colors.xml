@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="btnTextColor">#00FFFF</color>
     <color name="textViewBlackColor">#000000</color>
+    <color name="ItemSelectedColor">#009A69</color>
+    <color name="ItemUnSelectedColor">#6BFAEA</color>
+    <color name="homeFragmentBgColor">#FD8326</color>
+    <color name="searchFragmentBgColor">#3F51B5</color>
+    <color name="profileFragmentBgColor">#FFEB3B</color>
 </resources>

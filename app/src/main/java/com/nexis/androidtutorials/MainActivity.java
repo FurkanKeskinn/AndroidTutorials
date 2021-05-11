@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonMenuActivity = (Button) findViewById(R.id.buttonMenuActivity);
         Button buttonContextMenu = (Button) findViewById(R.id.buttonContextMenu);
         Button buttonCustomDialog = (Button) findViewById(R.id.buttonCustomDialog);
-
+        Button buttonBottomNavigationView = (Button) findViewById(R.id.buttonBottomNavigationView);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,6 +128,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CustomDialogActivity.class));
+
+            }
+        });
+
+        buttonBottomNavigationView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BottomNavigationViewActivity.class));
 
             }
         });
