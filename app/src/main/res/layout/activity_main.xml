@@ -4,80 +4,99 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button_calculate"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hesap Makinesi" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/estimating_numbers"
+        <Button
+            android:id="@+id/button_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hesap Makinesi" />
+
+        <Button
+            android:id="@+id/estimating_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sayı Tahmin Etme" />
+
+        <Button
+            android:id="@+id/imageTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İmage Test" />
+
+        <Button
+            android:id="@+id/signUppage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Ol Sayfası" />
+
+        <Button
+            android:id="@+id/buttonAndBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button And Bars" />
+
+        <Button
+            android:id="@+id/randomOperation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random İşlem" />
+
+        <Button
+            android:id="@+id/SwitchPagesActivity"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:text="Sayfalar Arası Geçiş" />
+
+        <Button
+            android:id="@+id/countersButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sayaçlar" />
+
+        <Button
+            android:id="@+id/nameCityGameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İsim Şehir Oyunu" />
+
+        <Button
+            android:id="@+id/activityListUses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liste Kullanımı" />
+
+        <Button
+            android:id="@+id/buttondialogActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diyaloglar" />
+
+
+        <Button
+            android:id="@+id/buttonMenuActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menü Kullanımı" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sayı Tahmin Etme" />
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/imageTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="İmage Test" />
+        <Button
+            android:id="@+id/buttonContextMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ContextMenü Kullanımı" />
 
-    <Button
-        android:id="@+id/signUppage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kayıt Ol Sayfası" />
-
-    <Button
-        android:id="@+id/buttonAndBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button And Bars" />
-
-    <Button
-        android:id="@+id/randomOperation"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Random İşlem" />
-
-    <Button
-        android:id="@+id/SwitchPagesActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sayfalar Arası Geçiş" />
-
-    <Button
-        android:id="@+id/countersButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sayaçlar" />
-
-    <Button
-        android:id="@+id/nameCityGameButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="İsim Şehir Oyunu" />
-
-    <Button
-        android:id="@+id/activityListUses"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Liste Kullanımı" />
-
-    <Button
-        android:id="@+id/buttondialogActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Diyaloglar" />
-
-    <Button
-        android:id="@+id/buttonMenuActivity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Menü Kullanımı" />
-
+    </LinearLayout>
 
 </LinearLayout>

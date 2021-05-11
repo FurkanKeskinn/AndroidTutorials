@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         Button activityListUses = (Button) findViewById(R.id.activityListUses);
         Button buttondialogActivity = (Button) findViewById(R.id.buttondialogActivity);
         Button buttonMenuActivity = (Button) findViewById(R.id.buttonMenuActivity);
+        Button buttonContextMenu = (Button) findViewById(R.id.buttonContextMenu);
 
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
@@ -110,6 +111,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, MenuActivity.class));
+
+            }
+        });
+
+        buttonContextMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ContextMenuActivity.class));
 
             }
         });

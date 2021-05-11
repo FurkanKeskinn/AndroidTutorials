@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Küçük Font"
+        android:id="@+id/font_color_f1"/>
+
+    <item
+        android:title="Normal Font"
+        android:id="@+id/font_color_f2"/>
+
+    <item
+        android:title="Büyük Font"
+        android:id="@+id/font_color_f3"/>
+
+</menu>

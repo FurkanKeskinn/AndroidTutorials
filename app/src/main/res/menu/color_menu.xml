@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Yeşil"
+        android:id="@+id/color_menu_green"/>
+
+    <item
+        android:title="Mavi"
+        android:id="@+id/color_menu_blue"/>
+
+    <item
+        android:title="Kırmızı"
+        android:id="@+id/color_menu_red"/>
+
+</menu>
