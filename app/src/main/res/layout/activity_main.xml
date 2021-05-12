@@ -115,6 +115,12 @@
             android:layout_height="wrap_content"
             android:text="NavigationView Kullanımı" />
 
+        <Button
+            android:id="@+id/buttonSharedPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SharedPreferences Kullanımı" />
+
     </LinearLayout>
 
 </LinearLayout>

@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonCustomDialog = (Button) findViewById(R.id.buttonCustomDialog);
         Button buttonBottomNavigationView = (Button) findViewById(R.id.buttonBottomNavigationView);
         Button buttonNavigationView = (Button) findViewById(R.id.buttonNavigationView);
+        Button buttonSharedPreferences = (Button) findViewById(R.id.buttonSharedPreferences);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,6 +146,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, NavigationViewActivity.class));
+
+            }
+        });
+
+        buttonSharedPreferences.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, SharedPreferencesActivity.class));
 
             }
         });
