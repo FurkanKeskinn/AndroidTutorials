@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorials">
-        <activity android:name=".BottomNavigationViewActivity"></activity>
+        <activity android:name=".NavigationViewActivity"></activity>
+        <activity android:name=".BottomNavigationViewActivity" />
         <activity android:name=".CustomDialogActivity" />
         <activity android:name=".ContextMenuActivity" />
         <activity android:name=".MenuActivity" />
