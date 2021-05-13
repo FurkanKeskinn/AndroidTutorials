@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SQLiteActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sQLiteButtonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sQLiteButtonOnClick"
+                android:text="Ekle"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sQLiteButtonUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Güncelle"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:onClick="sQLiteButtonOnClick"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sQLiteButtonDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sil"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:onClick="sQLiteButtonOnClick"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/sQLiteButtonDrop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Tabloyu Sil"
+                android:textColor="#ffffff"
+                android:textSize="19sp"
+                android:onClick="sQLiteButtonOnClick"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

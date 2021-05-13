@@ -121,6 +121,12 @@
             android:layout_height="wrap_content"
             android:text="SharedPreferences Kullanımı" />
 
+        <Button
+            android:id="@+id/buttonSQLite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SQLite Kullanımı" />
+
     </LinearLayout>
 
 </LinearLayout>
