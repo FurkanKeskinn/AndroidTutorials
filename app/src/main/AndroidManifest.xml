@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorials">
-        <activity android:name=".SQLiteActivity"></activity>
+        <activity android:name=".AddBookActivity"></activity>
+        <activity android:name=".MyBookListActivity" />
+        <activity android:name=".SQLiteActivity" />
         <activity android:name=".SharedPreferencesActivity" />
         <activity android:name=".NavigationViewActivity" />
         <activity android:name=".BottomNavigationViewActivity" />

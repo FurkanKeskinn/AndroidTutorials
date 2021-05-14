@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".AddBookActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+
+        <ImageView
+            android:id="@+id/add_book_activity_imageViewBookImage"
+            android:layout_width="240dp"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:src="@color/purple_500" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/add_book_activity_editTexxtBookName"
+            android:hint="Kitap İsmini Giriniz"/>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/add_book_activity_editTexxtBookWriter"
+            android:hint="Kitap Yazarını Giriniz"/>
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/add_book_activity_editTexxtBookSummary"
+            android:hint="Kitap Özetini Giriniz"/>
+
+        <Button
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Kaydet"
+            android:onClick="BookSave"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</RelativeLayout>
+
+
+</ScrollView>

@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:scrollbars="none">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
 
     <LinearLayout
-        android:layout_width="201dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -51,7 +57,7 @@
         <Button
             android:id="@+id/SwitchPagesActivity"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:text="Sayfalar Arası Geçiş" />
 
         <Button
@@ -87,27 +93,27 @@
 
         <Button
             android:id="@+id/buttonContextMenu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ContextMenü Kullanımı" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/buttonCustomDialog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Custom Dialog Yapımı" />
+            android:text="ContextMenü Kullanımı" />
+
+        <Button
+            android:id="@+id/buttonSQLite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SQLite Kullanımı" />
 
         <Button
             android:id="@+id/buttonBottomNavigationView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="BottomNavigationView Kullanımı" />
+
+        <Button
+            android:id="@+id/buttonCustomDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom Dialog Yapımı" />
 
         <Button
             android:id="@+id/buttonNavigationView"
@@ -122,11 +128,23 @@
             android:text="SharedPreferences Kullanımı" />
 
         <Button
-            android:id="@+id/buttonSQLite"
+            android:id="@+id/buttonMyBookList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SQLite Kullanımı" />
+            android:text="Benim Kitap Listem" />
+
+
 
     </LinearLayout>
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+
+</ScrollView>

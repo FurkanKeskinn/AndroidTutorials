@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonNavigationView = (Button) findViewById(R.id.buttonNavigationView);
         Button buttonSharedPreferences = (Button) findViewById(R.id.buttonSharedPreferences);
         Button buttonSQLite = (Button) findViewById(R.id.buttonSQLite);
+        Button buttonMyBookList = (Button) findViewById(R.id.buttonMyBookList);
 
         buttonCalculate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -163,6 +164,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, SQLiteActivity.class));
+
+            }
+        });
+
+        buttonMyBookList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, MyBookListActivity.class));
 
             }
         });
