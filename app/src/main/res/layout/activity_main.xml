@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     tools:context=".MainActivity"
-    android:scrollbars="none">
+    android:scrollbars="none"
+    android:background="#76C51C">
 
 <RelativeLayout
     android:layout_width="wrap_content"
