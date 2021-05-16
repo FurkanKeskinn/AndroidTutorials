@@ -12,6 +12,8 @@ import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import static com.nexis.androidtutorials.BooksAdapter.*;
+
 public class MyBookListActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
@@ -47,7 +49,7 @@ public class MyBookListActivity extends AppCompatActivity {
         mRecyclerView.setLayoutManager(manager);
         mRecyclerView.setAdapter(adapter);
 
-        adapter.setOnItemClickListener(new BooksAdapter.OnItemClickListener() {
+        adapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(Books books) {
                 Toast.makeText(getApplicationContext(),books.getKitapYazari(),Toast.LENGTH_SHORT).show();

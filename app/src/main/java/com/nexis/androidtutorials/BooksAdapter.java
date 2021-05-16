@@ -67,12 +67,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.booksHolder>
 
                 }
             });
-
-
-
-
         }
-
 
         public void setData(Books book) {
             this.textBookName.setText(book.getKitapAdi());
@@ -80,7 +75,6 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.booksHolder>
             this.textBookSummery.setText(book.getKitapOzeti());
             this.imageBookFoto.setImageBitmap(book.getKitapResim());
         }
-
     }
 
     public interface  OnItemClickListener{

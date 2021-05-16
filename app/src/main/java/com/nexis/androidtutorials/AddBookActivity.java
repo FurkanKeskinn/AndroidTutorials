@@ -29,7 +29,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 public class AddBookActivity extends AppCompatActivity {
-    private EditText editTextKitapIsmi, editTextKitapYazari, editTextKitapOzet;
+    private EditText editTextKitapIsmi, editTextKitapYazari, editTextKitapOzeti;
     private ImageView imageKitapResim;
     private String kitapIsmi, kitapYazari, kitapOzeti;
     private int imageIzinAlmaKodu = 0, imageIzinVerildiKodu = 1;
@@ -39,7 +39,7 @@ public class AddBookActivity extends AppCompatActivity {
     private void init() {
         editTextKitapIsmi = (EditText) findViewById(R.id.add_book_activity_editTexxtBookName);
         editTextKitapYazari = (EditText) findViewById(R.id.add_book_activity_editTexxtBookWriter);
-        editTextKitapOzet = (EditText) findViewById(R.id.add_book_activity_editTexxtBookSummary);
+        editTextKitapOzeti = (EditText) findViewById(R.id.add_book_activity_editTexxtBookSummary);
         imageKitapResim = (ImageView) findViewById(R.id.add_book_activity_imageViewBookImage);
         buttonSave =(Button)findViewById(R.id.add_book_activity_buttonSave);
     }
@@ -47,14 +47,14 @@ public class AddBookActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_book_list_details);
+        setContentView(R.layout.activity_add_book);
         init();
     }
 
     public void BookSaveOnClick(View v) {
         kitapIsmi = editTextKitapIsmi.getText().toString();
         kitapYazari = editTextKitapYazari.getText().toString();
-        kitapOzeti = editTextKitapOzet.getText().toString();
+        kitapOzeti = editTextKitapOzeti.getText().toString();
 
         if (!TextUtils.isEmpty(kitapIsmi)) {
             if (!TextUtils.isEmpty(kitapYazari)) {
@@ -64,14 +64,13 @@ public class AddBookActivity extends AppCompatActivity {
                     ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
                     kucultulenResim = resimiKucult(secilenResim);
                     kucultulenResim.compress(Bitmap.CompressFormat.PNG, 75, outputStream);
-                    outputStream.toByteArray();
                     byte[] kayitEdilecekResim = outputStream.toByteArray();
 
                     try {
                         SQLiteDatabase database = this.openOrCreateDatabase("Kitaplar", MODE_PRIVATE, null);
                         database.execSQL("CREATE TABLE IF NOT EXİSTS kitaplar (id INTEGER PRİMARY KEY, kitapAdi VARCHAR, kitapYazari VARCHAR, kitapOzeti VARCHAR, kitapResim BLOB)");
 
-                        String sqlSorgusu = "INSERT INTO kitaplar (kitapAdi, kitapYazari,kitapOzeti,kitapOzeti) VALUES (?,?,?,?)";
+                        String sqlSorgusu = "INSERT INTO kitaplar (kitapAdi,kitapYazari,kitapOzeti,kitapResim) VALUES (?,?,?,?)";
                         SQLiteStatement statement = database.compileStatement(sqlSorgusu);
                         statement.bindString(1,kitapIsmi);
                         statement.bindString(2,kitapYazari);
@@ -107,8 +106,8 @@ public class AddBookActivity extends AppCompatActivity {
 
     private void nesneleriTemizle(){
         editTextKitapIsmi.setText("");
-        editTextKitapOzet.setText("");
         editTextKitapYazari.setText("");
+        editTextKitapOzeti.setText("");
         enbastakiResim = BitmapFactory.decodeResource(this.getResources(),R.drawable.resim);
         imageKitapResim.setImageBitmap(enbastakiResim);
         buttonSave.setEnabled(false);
