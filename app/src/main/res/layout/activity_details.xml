@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="5dp"
-    tools:context=".DetailsActivity">
+    tools:context=".UseListAndDialogActivity.ListViewActivity.DetailsActivity">
 
     <TextView
         android:layout_width="wrap_content"

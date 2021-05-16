@@ -7,6 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.nexis.androidtutorials.ButtonAndBarActivity.ButtonAndBarActivity;
+import com.nexis.androidtutorials.ButtonAndBarActivity.RandomOperationActivity;
+import com.nexis.androidtutorials.ButtonAndBarActivity.SignUpPage;
+import com.nexis.androidtutorials.CalculateActivity.CalculateActivity;
+import com.nexis.androidtutorials.CountersActivity.CountersActivity;
+import com.nexis.androidtutorials.CustomDialogActivity.CustomDialogActivity;
+import com.nexis.androidtutorials.DialogActivity.DialogActivity;
+import com.nexis.androidtutorials.EstimatingNumbersActivity.EstimatingNumbers;
+import com.nexis.androidtutorials.ImageActivity.ImageActivity;
+import com.nexis.androidtutorials.MenuActivity.MenuActivity;
+import com.nexis.androidtutorials.MyBookListActivity.MyBookListActivity;
+import com.nexis.androidtutorials.NameCityGameActivity.NameCityGame;
+import com.nexis.androidtutorials.NavigationViewActivity.BottomNavigationViewActivity.BottomNavigationViewActivity;
+import com.nexis.androidtutorials.NavigationViewActivity.NavigationViewActivity.NavigationViewActivity;
+import com.nexis.androidtutorials.PagesActivity.SwitchPages;
+import com.nexis.androidtutorials.SQLiteActivity.SQLiteActivity;
+import com.nexis.androidtutorials.SharedPreferencesActivity.SharedPreferencesActivity;
+import com.nexis.androidtutorials.UseListAndDialogActivity.UseListActivity;
+
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MyBookListActivity">
+    tools:context=".MyBookListActivity.MyBookListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/my_book_listRecyclerView"
-        android:background="@color/white">
+        android:background="@color/ItemUnSelectedColor">
 
 
     </androidx.recyclerview.widget.RecyclerView>

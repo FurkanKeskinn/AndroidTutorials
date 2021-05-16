@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.nexis.androidtutorials">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,42 +11,39 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTutorials">
-        <activity android:name=".AddBookActivity"></activity>
-        <activity android:name=".MyBookListActivity" />
-        <activity android:name=".SQLiteActivity" />
-        <activity android:name=".SharedPreferencesActivity" />
-        <activity android:name=".NavigationViewActivity" />
-        <activity android:name=".BottomNavigationViewActivity" />
-        <activity android:name=".CustomDialogActivity" />
-        <activity android:name=".ContextMenuActivity" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".DialogActivity" />
-        <activity android:name=".ProgrammaticActivity" />
-        <activity android:name=".LifeCycles2" />
-        <activity android:name=".LifeCycles" />
-        <activity android:name=".RecyclerViewActivity" />
-        <activity android:name=".CoustomGridViewActivity" />
-        <activity android:name=".GridViewActivity" />
-        <activity android:name=".CoustomListViewActivity" />
-        <activity android:name=".UseListActivity" />
-        <activity android:name=".DetailsActivity" />
-        <activity android:name=".ListViewActivity" />
-        <activity
-            android:name=".TimeGameActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".NormalGameActivity"
-            android:screenOrientation="portrait" />
-        <activity android:name=".NameCityGame" />
-        <activity android:name=".CountersActivity" />
-        <activity android:name=".NewPagesActivity" />
-        <activity android:name=".SwitchPages" />
-        <activity android:name=".RandomOperationActivity" />
-        <activity android:name=".ButtonAndBarActivity" />
-        <activity android:name=".SignUpPage" />
-        <activity android:name=".ImageActivity" />
-        <activity android:name=".EstimatingNumbers" />
-        <activity android:name=".CalculateActivity" />
+        <activity android:name=".MyBookListActivity.MyBookListDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".MyBookListActivity.AddBookActivity" android:screenOrientation="portrait" />
+        <activity android:name=".MyBookListActivity.MyBookListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SQLiteActivity.SQLiteActivity" />
+        <activity android:name=".SharedPreferencesActivity.SharedPreferencesActivity" />
+        <activity android:name=".NavigationViewActivity.NavigationViewActivity.NavigationViewActivity" />
+        <activity android:name=".NavigationViewActivity.BottomNavigationViewActivity.BottomNavigationViewActivity" />
+        <activity android:name=".CustomDialogActivity.CustomDialogActivity" />
+        <activity android:name=".MenuActivity.ContextMenuActivity" />
+        <activity android:name=".MenuActivity.MenuActivity" />
+        <activity android:name=".DialogActivity.DialogActivity" />
+        <activity android:name=".UseListAndDialogActivity.ProgrammaticActivity" />
+        <activity android:name=".UseListAndDialogActivity.LifeCycles.LifeCycles2" />
+        <activity android:name=".UseListAndDialogActivity.LifeCycles.LifeCycles" />
+        <activity android:name=".UseListAndDialogActivity.RecyclerViewActivity.RecyclerViewActivity" />
+        <activity android:name=".UseListAndDialogActivity.CoustomGridViewActivity.CoustomGridViewActivity" />
+        <activity android:name=".UseListAndDialogActivity.CoustomGridViewActivity.GridViewActivity" />
+        <activity android:name=".UseListAndDialogActivity.CoustomListViewActivity.CoustomListViewActivity" />
+        <activity android:name=".UseListAndDialogActivity.UseListActivity" />
+        <activity android:name=".UseListAndDialogActivity.ListViewActivity.DetailsActivity" />
+        <activity android:name=".UseListAndDialogActivity.ListViewActivity.ListViewActivity" />
+        <activity android:name=".NameCityGameActivity.TimeGameActivity" android:screenOrientation="portrait" />
+        <activity android:name=".NameCityGameActivity.NormalGameActivity" android:screenOrientation="portrait" />
+        <activity android:name=".NameCityGameActivity.NameCityGame" />
+        <activity android:name=".CountersActivity.CountersActivity" />
+        <activity android:name=".PagesActivity.NewPagesActivity" />
+        <activity android:name=".PagesActivity.SwitchPages" />
+        <activity android:name=".ButtonAndBarActivity.RandomOperationActivity" />
+        <activity android:name=".ButtonAndBarActivity.ButtonAndBarActivity" />
+        <activity android:name=".ButtonAndBarActivity.SignUpPage" />
+        <activity android:name=".ImageActivity.ImageActivity" />
+        <activity android:name=".EstimatingNumbersActivity.EstimatingNumbers" />
+        <activity android:name=".CalculateActivity.CalculateActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
