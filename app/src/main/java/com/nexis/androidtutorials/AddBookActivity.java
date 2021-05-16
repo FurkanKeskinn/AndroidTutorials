@@ -51,7 +51,7 @@ public class AddBookActivity extends AppCompatActivity {
         init();
     }
 
-    public void BookSave(View v) {
+    public void BookSaveOnClick(View v) {
         kitapIsmi = editTextKitapIsmi.getText().toString();
         kitapYazari = editTextKitapYazari.getText().toString();
         kitapOzeti = editTextKitapOzet.getText().toString();
@@ -71,7 +71,7 @@ public class AddBookActivity extends AppCompatActivity {
                         SQLiteDatabase database = this.openOrCreateDatabase("Kitaplar", MODE_PRIVATE, null);
                         database.execSQL("CREATE TABLE IF NOT EXİSTS kitaplar (id INTEGER PRİMARY KEY, kitapAdi VARCHAR, kitapYazari VARCHAR, kitapOzeti VARCHAR, kitapResim BLOB)");
 
-                        String sqlSorgusu = "INSERT INTO kitaplar (kitapAdi, kitapYazari,kitapOzeti,kitapResim) VALUES (?,?,?,?)";
+                        String sqlSorgusu = "INSERT INTO kitaplar (kitapAdi, kitapYazari,kitapOzeti,kitapOzeti) VALUES (?,?,?,?)";
                         SQLiteStatement statement = database.compileStatement(sqlSorgusu);
                         statement.bindString(1,kitapIsmi);
                         statement.bindString(2,kitapYazari);

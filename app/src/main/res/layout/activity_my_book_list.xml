@@ -10,6 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/my_book_listRecyclerView"
+        android:background="@color/white">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </RelativeLayout>
