@@ -16,6 +16,7 @@ import com.nexis.androidtutorials.CustomDialogActivity.CustomDialogActivity;
 import com.nexis.androidtutorials.DialogActivity.DialogActivity;
 import com.nexis.androidtutorials.EstimatingNumbersActivity.EstimatingNumbers;
 import com.nexis.androidtutorials.ImageActivity.ImageActivity;
+import com.nexis.androidtutorials.MenuActivity.ContextMenuActivity;
 import com.nexis.androidtutorials.MenuActivity.MenuActivity;
 import com.nexis.androidtutorials.MyBookListActivity.MyBookListActivity;
 import com.nexis.androidtutorials.NameCityGameActivity.NameCityGame;
